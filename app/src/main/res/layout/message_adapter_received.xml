@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/receiveParent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4sp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/receiveMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/baseline_person_outline_24"
+        />
+    <TextView
+        android:id="@+id/receiveMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:layout_marginStart="4sp"
+        android:layout_marginLeft="4sp"
+        android:background="@drawable/background_received_message"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:text="hello"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/imgUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75"/>
+    <TextView
+        android:id="@+id/receiveTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4sp"
+        android:textColor="#7C7979"
+        android:textSize="15sp"
+        android:text="07/06/2022"
+        app:layout_constraintStart_toStartOf="@id/receiveMessage"
+        app:layout_constraintTop_toBottomOf="@id/receiveMessage" />
+
+    <ImageView
+        android:id="@+id/chatPicture"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toRightOf="@id/imgUser"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="4sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearAudioReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/background_received_message"
+        app:layout_constraintLeft_toRightOf="@id/imgUser"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="4sp">
+
+        <ImageView
+            android:id="@+id/btn_actionAudioReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play"
+            app:tint="@color/black" />
+
+        <SeekBar
+            android:id="@+id/seekbarReceive"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:padding="10dp"
+            android:progressTint="@color/black"
+            android:thumbTint="@color/black" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
