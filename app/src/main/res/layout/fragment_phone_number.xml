@@ -68,7 +68,7 @@
                     android:textSize="16dp"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="The new phone number will be associated with information, data and logs of Hoang Van Binh's account."/>
+                    android:text="The new phone number will be associated with information, data and logs of your account."/>
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="20dp"
