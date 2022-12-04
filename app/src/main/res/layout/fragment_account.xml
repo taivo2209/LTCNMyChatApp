@@ -125,16 +125,7 @@
             android:layout_height="7dp"
             style="?android:listSeparatorTextViewStyle"
             />
-        <TextView
-            android:drawableLeft="@drawable/baseline_delete_24"
-            android:drawablePadding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border_line"
-            android:text="Delete Your Account"
-            android:textColor="#FD0000"
-            android:textSize="20dp"
-            android:layout_marginBottom="20dp"/>
+
     </LinearLayout>
 
 </FrameLayout>

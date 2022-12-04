@@ -22,6 +22,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -381,7 +382,7 @@ public class ChatActivity extends AppCompatActivity {
                         inputMessage.setVisibility(View.VISIBLE);
                         iconCamera.setVisibility(View.VISIBLE);
 
-                        // giải hposng cho Recorder
+                        // giải phóng cho Recorder
                         mRecorder.release();
                         mRecorder = null;
                         //Thông báo người dùng
@@ -431,7 +432,7 @@ public class ChatActivity extends AppCompatActivity {
         });
     }
     //lưu file record lên database
-    private void UploadRecord(){
+    public void UploadRecord() {
         //Lấy Uri của file
         filePath = Uri.fromFile(new File(mFileName));
         //Kiểm tra đường dẫn file
