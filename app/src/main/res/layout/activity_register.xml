@@ -25,7 +25,7 @@
         android:layout_below="@+id/textView2"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20sp"
-        android:text="How we can contact you?"
+        android:text="Please Enter Your Phone Number"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edtPhonenum"
         android:layout_marginLeft="10dp"
-        android:text="What is your name?"
+        android:text="Please Enter Your Name"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -137,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/checkMale"
         android:layout_marginLeft="10sp"
-        android:text="Your secret word"
+        android:text="Please Enter Your Password"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
